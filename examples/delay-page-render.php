@@ -2,7 +2,7 @@
 
 require '../vendor/autoload.php';
 
-use JonnyW\PhantomJs\Client;
+use JonnyW\PhantomJSBundle\Client;
 
 $client = Client::getInstance();
 

@@ -2,8 +2,8 @@
 
 require '../vendor/autoload.php';
 
-use JonnyW\PhantomJs\Client;
-use JonnyW\PhantomJs\DependencyInjection\ServiceContainer;
+use JonnyW\PhantomJSBundle\Client;
+use JonnyW\PhantomJSBundle\DependencyInjection\ServiceContainer;
 
 // Create a file with a custom name 
 // e.g. custom_procedure.proc and save it 

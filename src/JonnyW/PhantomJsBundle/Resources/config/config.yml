@@ -1,0 +1,45 @@
+parameters:
+
+#############################
+### CONFIGURATION OPTIONS ###
+#############################
+
+    phantomjs.cache_dir: /tmp
+    phantomjs.procedure_dir: "%phantomjs.resource_dir%/procedures"
+    phantomjs.procedure_extension: proc
+
+##################
+### PROCEDURES ###
+##################
+
+    phantomjs.procedure.procedure_loader.class: JonnyW\PhantomJSBundle\Procedure\ProcedureLoader
+    phantomjs.procedure.chain_loader.class: JonnyW\PhantomJSBundle\Procedure\ChainProcedureLoader
+    phantomjs.procedure.procedure_factory.class: JonnyW\PhantomJSBundle\Procedure\ProcedureFactory
+    phantomjs.procedure.procedure_loader_factory.class: JonnyW\PhantomJSBundle\Procedure\ProcedureLoaderFactory
+
+################
+### MESSAGES ###
+################
+
+    phantomjs.message.message_factory.class: JonnyW\PhantomJSBundle\Message\MessageFactory
+
+################
+### PARSING ####
+################
+
+    phantomjs.parser.json_parser.class: JonnyW\PhantomJSBundle\Parser\JsonParser
+
+##################
+### TEMPLATES ####
+##################
+
+    phantomjs.template.template_renderer.class: JonnyW\PhantomJSBundle\Template\TemplateRenderer
+    phantomjs.twig.environment.class: Twig_Environment
+    phantomjs.twig.string_loader.class: Twig_Loader_String
+
+##################
+### RESOURCES ####
+##################
+
+    phantomjs.cache.file_cache.class: JonnyW\PhantomJSBundle\Cache\FileCache
+    phantomjs.loader.file_locator.class: Symfony\Component\Config\FileLocator
